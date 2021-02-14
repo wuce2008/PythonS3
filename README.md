@@ -14,13 +14,17 @@ python 3.8.6
 
 # Step 1 - Create IAM User in AWS 
 
-## Add new user
+Add new user
 
-## Set user name
+![](image/addnewuser.png)
 
-## Assign user S3 access
+Set user name
 
-## record user Access key ID and Secret access key
+![](image/setuserdetails.png)
+
+Assign user S3 access
+
+record user Access key ID and Secret access key
 
 # Step 2 - Install boto3
 
