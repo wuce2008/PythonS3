@@ -1,56 +1,45 @@
-# JupyterPySpark
+# Connect AWS S3 in python using boto3
 
-Implement Jupyter in Docker
+# Introduction
 
-Read json files from AWS S3
+In this article, it shows how to connect AWS S3 in python by using boto3 package.
 
 # Prerequistes
 
 MacOS
 
-Docker (version 19.03.13)
+Jupyter-notebook  6.2.0
 
-download hadoop-aws jar https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-aws
+python 3.8.6
 
-and aws-java-sdk-core jar https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-core/1.11.954
+# Step 1 - Create IAM User in AWS 
 
-# Step 1
+## Add new user
 
-Implement Jupyter Spark image in Docker.
+## Set user name
 
-run following shell command
+## Assign user S3 access
 
-```shell
-docker pull jupyter/all-spark-notebook
+## record user Access key ID and Secret access key
+
+# Step 2 - Install boto3
+
+run code in jupyter python file
+```
+pip install boto3
 ```
 
-# Step 2
-
-Run container using port 8888:8888 (-p), name the container as jupyter-all-spark (-name), remove container after exit (-) 
-
-run following shell command
-
-```shell
-docker run -p 8888:8888 --name jupyter-all-spark --rm jupyter/all-spark-notebook
-```
-
-# Step 3
-
-While running container jupyter-all-spark, the shell show your message of the url to open jupyter. 
+then
 
 ```
-To access the notebook, open this file in a browser:
-  file:///home/jovyan/.local/share/jupyter/runtime/nbserver-6-open.html
-Or copy and paste one of these URLs:
-  http://host:8888/?toek=abc
-or http://host:port/?token=abc
+import boto3
 ```
 
-Copy the url http://host:port/?token=abc. Open it in browser to open Jupyter notebook.
+# Step 3 - Set boto3 configuration 
 
-# Step 4
+# Step 4 - Read S3 file in your bucket
 
-Make sure 
+
 
 
 
