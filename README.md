@@ -14,17 +14,27 @@ python 3.8.6
 
 # Step 1 - Create IAM User in AWS 
 
-Add new user
+AWS IAM is short for Identity and Access Management. You could set/modify groups, users, roles, or other policies in IAM. We will create a new AWS user with AWS S3 access. 
+
+* Add new user
 
 ![](image/addnewuser.png)
 
-Set user name
+* Set user name
 
 ![](image/setuserdetails.png)
 
-Assign user S3 access
+* Assign user S3 access
 
-record user Access key ID and Secret access key
+There are several options you can choose in thie step. You can set S3 full access, S3 only read, access for specific bucket, etc. Here I will choose AmazonS3FullAccess.
+
+![](image/assigns3access.png)
+
+* Record user Access key ID and Secret access key
+
+Copy and paste the user's Access key ID and Secret access key somewhere. It is very important. We are going to use this strings in boto3 connection configuration.
+
+![](image/recordidpassword.png)
 
 # Step 2 - Install boto3
 
