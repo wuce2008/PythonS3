@@ -10,6 +10,10 @@ MacOS
 
 Docker (version 19.03.13)
 
+download hadoop-aws jar https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-aws
+
+and aws-java-sdk-core jar https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-core/1.11.954
+
 # Step 1
 
 Implement Jupyter Spark image in Docker.
